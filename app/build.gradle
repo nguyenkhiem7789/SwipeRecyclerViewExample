@@ -24,6 +24,18 @@ android {
     }
 }
 
+ext {
+    retrofit_version = '2.6.0'
+
+    ktx_version = "1.2.0-alpha02"
+    koin_version = "2.0.1"
+
+    cardview_version = "1.0.0"
+    recyclerview_version = "1.1.0"
+
+    snack_bar_version = "1.1.1"
+}
+
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
@@ -33,5 +45,11 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
-
+    // swipe layout
+    implementation 'com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1'
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+    // Androidx Libs
+    implementation "androidx.cardview:cardview:$cardview_version"
+    implementation "androidx.recyclerview:recyclerview:$recyclerview_version"
 }
